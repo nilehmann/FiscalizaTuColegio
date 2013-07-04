@@ -37,7 +37,6 @@ class ReclamosController extends AppController {
 			"categorias" => $this->Reclamo->Categoria->find("list"),
 			"categoria_usuarios" => $this->Reclamo->Usuario->CategoriaUsuario->find("list"),
 			"comunas" => $this->Reclamo->Colegio->Comuna->find("list"),
-			"region" => $this->Reclamo->Colegio->
 			);
 		echo json_encode($data);
 	}
