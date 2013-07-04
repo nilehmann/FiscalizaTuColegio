@@ -1,0 +1,350 @@
+2013-07-03 16:47:08 Error: [MissingTableException] Table categorias for model Categoria was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'categorias',
+  'class' => 'Categoria',
+  'ds' => 'default',
+)
+Request URL: /quejon/reclamos
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Model/Model.php(3243): Model->setSource('categorias')
+#1 /var/www/quejon/lib/Cake/Model/Datasource/DboSource.php(1066): Model->getDataSource()
+#2 /var/www/quejon/lib/Cake/Model/Model.php(2696): DboSource->read(Object(Reclamo), Array)
+#3 /var/www/quejon/lib/Cake/Controller/Component/PaginatorComponent.php(197): Model->find('all', Array)
+#4 /var/www/quejon/lib/Cake/Controller/Controller.php(1074): PaginatorComponent->paginate(NULL, Array, Array)
+#5 /var/www/quejon/app/Controller/ReclamosController.php(17): Controller->paginate()
+#6 [internal function]: ReclamosController->index()
+#7 /var/www/quejon/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ReclamosController), Array)
+#8 /var/www/quejon/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/quejon/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ReclamosController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/quejon/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-07-03 16:47:46 Error: [MissingViewException] View file "/var/www/quejon/app/View/Reclamos/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/quejon/app/View/Reclamos/index.ctp',
+)
+Request URL: /quejon/reclamos
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/quejon/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/quejon/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/quejon/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ReclamosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/quejon/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-07-03 16:51:55 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/quejon/app/Controller/ReclamosController.php, line 51]
+2013-07-03 16:51:55 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /quejon/reclamos/add
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/quejon...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/quejon...', 51, Array)
+#2 /var/www/quejon/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/quejon...', 51, Array)
+#3 /var/www/quejon/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-03 16:53:11 Error: [MissingControllerException] Controller class CategoriasController could not be found.
+Exception Attributes: array (
+  'class' => 'CategoriasController',
+  'plugin' => NULL,
+)
+Request URL: /quejon/categorias/add
+Stack Trace:
+#0 /var/www/quejon/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-07-03 16:58:20 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /quejon/categorias/add
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/quejon/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `qu...', Array)
+#2 /var/www/quejon/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `qu...')
+#3 /var/www/quejon/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Categoria), Array, Array)
+#4 /var/www/quejon/app/Controller/CategoriasController.php(43): Model->save(Array)
+#5 [internal function]: CategoriasController->add()
+#6 /var/www/quejon/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#7 /var/www/quejon/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/quejon/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/quejon/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-07-03 17:04:38 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /quejon/categorias/add
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/quejon/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `qu...', Array)
+#2 /var/www/quejon/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `qu...')
+#3 /var/www/quejon/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Categoria), Array, Array)
+#4 /var/www/quejon/app/Controller/CategoriasController.php(43): Model->save(Array)
+#5 [internal function]: CategoriasController->add()
+#6 /var/www/quejon/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#7 /var/www/quejon/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/quejon/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/quejon/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-07-03 17:05:58 Error: [MissingControllerException] Controller class CategoriausuariosController could not be found.
+Exception Attributes: array (
+  'class' => 'CategoriausuariosController',
+  'plugin' => NULL,
+)
+Request URL: /quejon/categoriausuarios
+Stack Trace:
+#0 /var/www/quejon/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-07-03 17:26:47 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [/var/www/quejon/app/Controller/CategoriasController.php, line 44]
+2013-07-03 17:26:47 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /quejon/categorias/add
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/quejon...', 44)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/quejon...', 44, Array)
+#2 /var/www/quejon/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/quejon...', 44, Array)
+#3 /var/www/quejon/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-03 17:58:48 Error: Fatal Error (4): syntax error, unexpected '"titulo"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/var/www/quejon/app/Controller/ReclamosController.php, line 47]
+2013-07-03 17:58:48 Error: [FatalErrorException] syntax error, unexpected '"titulo"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /quejon/reclamos/add
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/quejon...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/quejon...', 47, Array)
+#2 /var/www/quejon/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/quejon...', 47, Array)
+#3 /var/www/quejon/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-03 17:59:07 Error: Fatal Error (4): syntax error, unexpected '"id_categoria"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/var/www/quejon/app/Controller/ReclamosController.php, line 55]
+2013-07-03 17:59:07 Error: [FatalErrorException] syntax error, unexpected '"id_categoria"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /quejon/reclamos/add
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/quejon...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/quejon...', 55, Array)
+#2 /var/www/quejon/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/quejon...', 55, Array)
+#3 /var/www/quejon/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-03 17:59:15 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [/var/www/quejon/app/Controller/ReclamosController.php, line 60]
+2013-07-03 17:59:15 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /quejon/reclamos/add
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/quejon...', 60)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/quejon...', 60, Array)
+#2 /var/www/quejon/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/quejon...', 60, Array)
+#3 /var/www/quejon/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-03 18:22:08 Error: Fatal Error (1): Call to a member function format() on a non-object in [/var/www/quejon/app/Controller/ReclamosController.php, line 43]
+2013-07-03 18:22:08 Error: [FatalErrorException] Call to a member function format() on a non-object
+Request URL: /quejon/reclamos/add
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/quejon...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/quejon...', 43, Array)
+#2 /var/www/quejon/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/quejon...', 43, Array)
+#3 /var/www/quejon/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-03 18:23:19 Error: Fatal Error (1): Call to a member function format() on a non-object in [/var/www/quejon/app/Controller/ReclamosController.php, line 43]
+2013-07-03 18:23:19 Error: [FatalErrorException] Call to a member function format() on a non-object
+Request URL: /quejon/reclamos/add
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/quejon...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/quejon...', 43, Array)
+#2 /var/www/quejon/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/quejon...', 43, Array)
+#3 /var/www/quejon/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-03 18:23:22 Error: Fatal Error (1): Call to a member function format() on a non-object in [/var/www/quejon/app/Controller/ReclamosController.php, line 43]
+2013-07-03 18:23:22 Error: [FatalErrorException] Call to a member function format() on a non-object
+Request URL: /quejon/reclamos/add
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/quejon...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/quejon...', 43, Array)
+#2 /var/www/quejon/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/quejon...', 43, Array)
+#3 /var/www/quejon/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-03 18:26:41 Error: Fatal Error (1): Call to a member function create() on a non-object in [/var/www/quejon/app/Controller/ReclamosController.php, line 60]
+2013-07-03 18:26:41 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /quejon/reclamos/add
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/quejon...', 60)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/quejon...', 60, Array)
+#2 /var/www/quejon/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/quejon...', 60, Array)
+#3 /var/www/quejon/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-03 18:28:03 Error: Fatal Error (1): Call to a member function create() on a non-object in [/var/www/quejon/app/Controller/ReclamosController.php, line 60]
+2013-07-03 18:28:03 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /quejon/reclamos/add
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/quejon...', 60)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/quejon...', 60, Array)
+#2 /var/www/quejon/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/quejon...', 60, Array)
+#3 /var/www/quejon/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-03 18:29:39 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`quejon`.`reclamo`, CONSTRAINT `reclamo_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /quejon/reclamos/add
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/quejon/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `qu...', Array)
+#2 /var/www/quejon/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `qu...')
+#3 /var/www/quejon/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Reclamo), Array, Array)
+#4 /var/www/quejon/app/Controller/ReclamosController.php(61): Model->save(Array, Array)
+#5 [internal function]: ReclamosController->add()
+#6 /var/www/quejon/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ReclamosController), Array)
+#7 /var/www/quejon/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/quejon/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ReclamosController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/quejon/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-07-03 18:32:55 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`quejon`.`reclamo`, CONSTRAINT `reclamo_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /quejon/reclamos/add
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/quejon/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `qu...', Array)
+#2 /var/www/quejon/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `qu...')
+#3 /var/www/quejon/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Reclamo), Array, Array)
+#4 /var/www/quejon/lib/Cake/Model/Model.php(2247): Model->save(Array, Array)
+#5 /var/www/quejon/app/Controller/ReclamosController.php(55): Model->saveAssociated(Array, Array)
+#6 [internal function]: ReclamosController->add()
+#7 /var/www/quejon/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ReclamosController), Array)
+#8 /var/www/quejon/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/quejon/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ReclamosController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/quejon/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-07-03 18:33:39 Error: Fatal Error (4): syntax error, unexpected 'id_categoria' (T_STRING), expecting ')' in [/var/www/quejon/app/Controller/ReclamosController.php, line 54]
+2013-07-03 18:33:39 Error: [FatalErrorException] syntax error, unexpected 'id_categoria' (T_STRING), expecting ')'
+Request URL: /quejon/reclamos/add
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/quejon...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/quejon...', 54, Array)
+#2 /var/www/quejon/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/quejon...', 54, Array)
+#3 /var/www/quejon/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-03 18:33:53 Error: Fatal Error (4): syntax error, unexpected 'deep' (T_STRING) in [/var/www/quejon/app/Controller/ReclamosController.php, line 60]
+2013-07-03 18:33:53 Error: [FatalErrorException] syntax error, unexpected 'deep' (T_STRING)
+Request URL: /quejon/reclamos/add
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/quejon...', 60)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/quejon...', 60, Array)
+#2 /var/www/quejon/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/quejon...', 60, Array)
+#3 /var/www/quejon/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-03 18:35:19 Error: [MissingControllerException] Controller class ColegiosController could not be found.
+Exception Attributes: array (
+  'class' => 'ColegiosController',
+  'plugin' => NULL,
+)
+Request URL: /quejon/colegios/view/2
+Stack Trace:
+#0 /var/www/quejon/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-07-03 18:35:25 Error: [MissingControllerException] Controller class UsuariosController could not be found.
+Exception Attributes: array (
+  'class' => 'UsuariosController',
+  'plugin' => NULL,
+)
+Request URL: /quejon/usuarios/view/1
+Stack Trace:
+#0 /var/www/quejon/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-07-03 18:51:04 Error: [MissingViewException] View file "/var/www/quejon/app/View/Colegios/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/quejon/app/View/Colegios/index.ctp',
+)
+Request URL: /quejon/colegios
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/quejon/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/quejon/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/quejon/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ColegiosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/quejon/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-07-03 18:51:11 Error: [MissingViewException] View file "/var/www/quejon/app/View/Colegios/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/quejon/app/View/Colegios/index.ctp',
+)
+Request URL: /quejon/colegios
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/quejon/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/quejon/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/quejon/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ColegiosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/quejon/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-07-03 18:58:12 Error: [MissingActionException] Action ColegiosController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'ColegiosController',
+  'action' => 'add',
+)
+Request URL: /quejon/colegios/add
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/quejon/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ColegiosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/quejon/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-07-03 19:05:07 Error: [MissingControllerException] Controller class CategoriasUsuariosController could not be found.
+Exception Attributes: array (
+  'class' => 'CategoriasUsuariosController',
+  'plugin' => NULL,
+)
+Request URL: /quejon/categoriasUsuarios
+Stack Trace:
+#0 /var/www/quejon/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-07-03 19:23:25 Error: Fatal Error (4): syntax error, unexpected ',' in [/var/www/quejon/app/Controller/ReclamosController.php, line 31]
+2013-07-03 19:23:25 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /quejon/reclamos/getLastUpdate
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/quejon...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/quejon...', 31, Array)
+#2 /var/www/quejon/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/quejon...', 31, Array)
+#3 /var/www/quejon/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-03 19:23:35 Error: Fatal Error (4): syntax error, unexpected '"status"' (T_CONSTANT_ENCAPSED_STRING) in [/var/www/quejon/app/Controller/ReclamosController.php, line 85]
+2013-07-03 19:23:35 Error: [FatalErrorException] syntax error, unexpected '"status"' (T_CONSTANT_ENCAPSED_STRING)
+Request URL: /quejon/reclamos/getLastUpdate
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/quejon...', 85)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/quejon...', 85, Array)
+#2 /var/www/quejon/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/quejon...', 85, Array)
+#3 /var/www/quejon/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-03 19:23:46 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [/var/www/quejon/app/Controller/ReclamosController.php, line 88]
+2013-07-03 19:23:46 Error: [FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /quejon/reclamos/getLastUpdate
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/quejon...', 88)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/quejon...', 88, Array)
+#2 /var/www/quejon/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/quejon...', 88, Array)
+#3 /var/www/quejon/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-03 19:24:15 Error: [MissingActionException] Action ReclamosController::getLastUpdate() could not be found.
+Exception Attributes: array (
+  'controller' => 'ReclamosController',
+  'action' => 'getLastUpdate',
+)
+Request URL: /quejon/reclamos/getLastUpdate
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/quejon/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ReclamosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/quejon/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-07-03 19:44:27 Error: Fatal Error (1): Class 'ateTime' not found in [/var/www/quejon/app/Controller/ReclamosController.php, line 30]
+2013-07-03 19:44:27 Error: [FatalErrorException] Class 'ateTime' not found
+Request URL: /quejon/reclamos/getLastUpdate
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'ateTime'...', '/var/www/quejon...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'ateTime'...', '/var/www/quejon...', 30, Array)
+#2 /var/www/quejon/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Class 'ateTime'...', '/var/www/quejon...', 30, Array)
+#3 /var/www/quejon/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-03 20:05:57 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/quejon/app/Controller/ReclamosController.php, line 39]
+2013-07-03 20:05:57 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /quejon/reclamos/getData
+Stack Trace:
+#0 /var/www/quejon/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/quejon...', 39)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/quejon...', 39, Array)
+#2 /var/www/quejon/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/quejon...', 39, Array)
+#3 /var/www/quejon/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
