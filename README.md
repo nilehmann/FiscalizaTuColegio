@@ -16,9 +16,16 @@ Gonzalo Flores
 
 Funcionalidades
 
-> Publicar una denuncia desde un celular o página web, en donde esté la opción de subir una imagen o documento.
-> Visualizar las denuncias ingresadas
-> Contar con un mecanismo que permita bloquear las denuncias mal intencionadas
+ Publicar una denuncia desde un celular o página web, en donde esté la opción de subir una imagen o documento.
+ Visualizar las denuncias ingresadas
+ Contar con un mecanismo que permita bloquear las denuncias mal intencionadas
 
 
+
+Detalles técnicos
+
+Aplicación web desarrollada con el framework CakePHP. El diseño está dado por Bootstrap.
+Aplicación movil desarrollada en Android.
+
+Ambas aplicaciones se conectan a la misma base de datos, por medio de consultas post que son enviadas por JSON.
 
