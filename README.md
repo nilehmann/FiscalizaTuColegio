@@ -1,4 +1,3 @@
-
 Fiscaliza tu colegio
 =======
 Objetivo.
@@ -7,10 +6,14 @@ Poder mostrar las diferentes irregularidades que se tienen en los colegios de Ch
 
 # Equipo
 
+Aplicación web
+* Matías Bensan
 * Nicolas Lehmann
+
+Aplicación móvil
 * Mario Leverone
 * Ian Yon
-* Matías Bensan
-* Nicolás Delgado
-* Gonzalo Flores
 
+Diseño
+* Gonzalo Flores
+* Nicolas Delgado
